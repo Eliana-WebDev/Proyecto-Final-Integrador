@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.banner {
+  background-image: url(../../imagenes/cv_banner_b&r.jpg);
+  height: 220px;
+  margin-left: 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.texto-banner {
+  top: 130px;
+  left: 430px;
+  color: #1e8397;
+  font-size: 24px;
+  text-shadow: 3px 4px #580707;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  display: inline-block;
+  position: relative;
+  transition: transform .2s;
+}
+
+
+.sidebar {
+  font-size: 18px;
+  position: fixed;
+  background-color: #050505;
+  width: 25%;
+  height: 100%;
+  top: 0;
+}
+
+.foto_perfil {
+  border: 10px solid rgb(183, 11, 11);
+  width: 65%;
+  border-radius: 50%;
+}
+
+#contacto {
+  color: rgb(245, 23, 23);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sidebar ul li {
+  color: bisque;
+  border-bottom: 1px solid rgb(77, 77, 76);
+  text-align: center;
+  padding: 15px 10px;
+  display: block;
+  cursor: pointer;
+
+}
+
+.principal {
+  position: absolute;
+  max-height: 65vh;
+  color: rgb(174, 176, 168);
+  display: inline-block;
+  width: 75%;
+  height: 100%;
+  margin-left: 25%;
+  background: linear-gradient(black 1%, darkcyan);
+}
+
+.popup {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  color: #2e2c01;
+  padding: 50px;
+  width: 40%;
+  height: 35%;
+  background-image: linear-gradient(to top left, rgb(208, 205, 205) 25%, rgb(77, 126, 120));
+  box-shadow: 0px 0px 15px 0px rgb(11, 102, 116) inset;
+  border-radius: 10px;
+  transition: .5s ease all;
+  display: none;
+  top: 0;
+  left: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* botones */
+.frente_btn {
+  height: 150px;
+  width: 150px;
+  color: #f6f7f4;
+  border: 10px solid rgb(183, 11, 11);
+  font-family: 'Khand', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-shadow: 4px 4px #9a0303;
+  border-radius: 50%;
+  background-color: #00080a;
+  margin-left: 130px;
+  margin-top: 100px;
+  box-shadow: 10px 1px 5px 1px rgb(4, 4, 4);
+  outline: none;
+}
+
+
+button:hover {
+
+  background-color: rgb(60, 5, 21);
+}
+
+footer {
+  position: absolute;
+  background-color: rgb(60, 5, 21);
+  padding-top: 15px;
+  color: rgb(250, 248, 248);
+  font-family: "khand";
+  text-align: center;
+  border-top: 4px solid rgb(21, 183, 164);
+  right: 0;
+  bottom: 0;
+  width: 75%;
+  height: 100px;
+  overflow: hidden;
+  visibility: visible;
+}
+
+.tematico {
+  font-size: 10px;
+  color: #ec9898;
+}
+
+a:visited {
+  color: rgb(141, 53, 173);
+}
+
+a:hover {
+
+  color: #9a0303;
+}
+
+.texto-banner:hover {
+  color: rgb(9, 155, 171);
+  transform: scale(1.3);
+  left: 370px;
+}
+
+.footer_hover:hover {
+  color: aquamarine;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .foto_perfil {
+    border: 5px solid rgb(7, 87, 87);
+  }
+
+}

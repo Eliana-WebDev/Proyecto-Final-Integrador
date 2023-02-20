@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <title>CV</title>
+  </head>
+  <body>
+    <header class="banner">
+      <div class="texto-banner">
+        <span>Diseño, creación y mantenimiento de páginas web </span>
+      </div>
+    </header>
+    <div class="sidebar">
+      <ul>
+        <li>
+          <img
+            src="imagenes/Elliott_Alderson.jpeg"
+            alt="foto de perfil"
+            class="foto_perfil"
+          />
+        </li>
+        <li id="contacto">CONTACTO</li>
+        <li>
+          <a href="#"><i class="fa-sharp fa-solid fa-phone-flip"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-sharp fa-regular fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fa fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="principal">
+      <button class="frente_btn" onclick="abrirPopup('popup_1')">
+        Sobre mí
+      </button>
+      <button class="frente_btn" onclick="abrirPopup('popup_2')">
+        Formación
+      </button>
+      <button class="frente_btn" onclick="abrirPopup('popup_3')">
+        Mi trabajo
+      </button>
+    </section>
+    <div id="popup_1" class="popup">
+      <div class="popup_contenido">
+        <p>
+          Sobre mí: Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Reiciendis id culpa voluptatum, pariatur quod,
+          placeat quo voluptatibus eveniet rerum ut esse dicta numquam cumque
+          dolore alias voluptatem debitis. Repellat, doloremque.
+        </p>
+        <button class="cerrar" onclick="cerrarPopup('popup_1')">
+          <i class="fa-solid fa-rectangle-xmark"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="popup_2" class="popup">
+      <div class="popup_contenido">
+        <p>Mi Formación: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nostrum vero atque reiciendis, voluptatem quaerat accusamus sequi optio adipisci doloribus, blanditiis totam est animi id eum exercitationem delectus cupiditate vitae.</p>
+        <button class="cerrar" onclick="cerrarPopup('popup_2')">
+          <i class="fa-solid fa-rectangle-xmark"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="popup_3" class="popup">
+      <div class="popup_contenido">
+        <p>Mi trabajo: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, quod harum repellat rerum ipsum similique mollitia ab et in tempora. In ratione adipisci possimus magnam quibusdam rerum optio quaerat atque.</p>
+        <button class="cerrar" onclick="cerrarPopup('popup_3')">
+          <i class="fa-solid fa-rectangle-xmark"></i>
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p class="footer_hover">Elliot Alderson soluciones informáticas</p>
+      <p class="footer_hover">Diseño y maquetación: Eliana Teme</p>
+      <p class="footer_hover">
+        Proyecto final integrador Curso Desarrollo front end - Ticmas Academy / Argentina Programa, Febrero de 2023
+      </p>
+      <p class="footer_hover tematico">cv temático de la serie Mr.Robot</p>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/e41a6162cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/cv.js"></script>
+  </body>
+</html>
